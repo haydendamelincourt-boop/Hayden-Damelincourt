@@ -342,7 +342,7 @@ strong { color: var(--navy-900); font-weight: 600; }
 }
 
 .logo-row { margin-top: 22px; display: flex; align-items: center; gap: 18px; }
-.logo-row img { height: 60px; width: auto; border-radius: 6px; box-shadow: none; }
+.logo-row img { height: 96px; width: auto; border-radius: 8px; box-shadow: none; }
 
 .interests-close {
   max-width: 720px;
@@ -384,7 +384,7 @@ strong { color: var(--navy-900); font-weight: 600; }
   display: flex;
   flex-direction: column;
 }
-.case-media img { width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; }
+.case-media img { width: 100%; aspect-ratio: 16/9; object-fit: contain; background: #f3f1ec; }
 .case-body { padding: 26px 28px 30px; }
 .case-tag {
   font-size: 0.75rem;
@@ -397,7 +397,7 @@ strong { color: var(--navy-900); font-weight: 600; }
 .case-card h4 { color: #fff; }
 .case-card p { color: rgba(255,255,255,0.75); font-size: 0.97rem; }
 .case-shot { margin-top: 18px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-.case-shot img { aspect-ratio: 16/10; object-fit: cover; object-position: top; }
+.case-shot img { aspect-ratio: 16/10; object-fit: contain; background: #f3f1ec; }
 .case-link {
   display: inline-block;
   margin-top: 18px;
