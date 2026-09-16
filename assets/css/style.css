@@ -342,7 +342,7 @@ strong { color: var(--navy-900); font-weight: 600; }
 }
 
 .logo-row { margin-top: 22px; display: flex; align-items: center; gap: 18px; }
-.logo-row img { height: 96px; width: auto; border-radius: 8px; box-shadow: none; }
+.logo-row img { height: 140px; width: auto; border-radius: 8px; box-shadow: none; }
 
 .interests-close {
   max-width: 720px;
@@ -361,6 +361,7 @@ strong { color: var(--navy-900); font-weight: 600; }
 .experience { padding: 90px 0 100px; background: var(--navy-950); }
 .experience .section-head h2,
 .experience .subhead { color: #fff; }
+.experience .section-head h2 { white-space: nowrap; font-size: clamp(1.4rem, 4.2vw, 2.6rem); }
 .experience .eyebrow { color: var(--gold-400); }
 .experience .subhead-body { color: rgba(255,255,255,0.72); max-width: 680px; }
 
@@ -393,8 +394,9 @@ strong { color: var(--navy-900); font-weight: 600; }
   text-transform: uppercase;
   color: var(--teal-400);
   margin-bottom: 0.6em;
+  text-align: center;
 }
-.case-card h4 { color: #fff; }
+.case-card h4 { color: #fff; text-align: center; }
 .case-card p { color: rgba(255,255,255,0.75); font-size: 0.97rem; }
 .case-shot { margin-top: 18px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
 .case-shot img { aspect-ratio: 16/10; object-fit: contain; background: #f3f1ec; }
