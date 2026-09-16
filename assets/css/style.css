@@ -413,6 +413,32 @@ strong { color: var(--navy-900); font-weight: 600; }
 }
 .case-link:hover { color: #fff; border-color: #fff; }
 
+.pillar-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+.pillar-list li {
+  position: relative;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+.pillar-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--teal-400);
+}
+.pillar-list strong { color: #fff; }
+
 .research-block {
   margin-top: 60px;
   display: grid;
@@ -481,6 +507,72 @@ strong { color: var(--navy-900); font-weight: 600; }
   object-fit: cover;
 }
 .community-text p { font-size: 1.05rem; }
+
+.reason-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 14px 0 22px;
+}
+.reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  background: var(--sand-100);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.reason-mark {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--navy-900);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.reason-item h5 {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+  color: var(--navy-900);
+}
+.reason-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.trait-list {
+  list-style: none;
+  margin: 14px 0 22px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.trait-list li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--ink-700);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+.trait-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold-500);
+}
 
 /* ---------- Contact ---------- */
 .contact {
