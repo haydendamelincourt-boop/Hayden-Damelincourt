@@ -312,6 +312,9 @@ strong { color: var(--navy-900); font-weight: 600; }
   grid-column: 1 / -1;
   aspect-ratio: 16 / 9;
 }
+.interest--travel .interest-media.grid-3 img:first-child {
+  object-position: 50% 30%;
+}
 .interest-media.grid-3 img:nth-child(2),
 .interest-media.grid-3 img:nth-child(3) {
   aspect-ratio: 4 / 5;
@@ -339,7 +342,7 @@ strong { color: var(--navy-900); font-weight: 600; }
 }
 
 .logo-row { margin-top: 22px; display: flex; align-items: center; gap: 18px; }
-.logo-row img { height: 34px; width: auto; border-radius: 6px; box-shadow: none; }
+.logo-row img { height: 60px; width: auto; border-radius: 6px; box-shadow: none; }
 
 .interests-close {
   max-width: 720px;
@@ -395,6 +398,18 @@ strong { color: var(--navy-900); font-weight: 600; }
 .case-card p { color: rgba(255,255,255,0.75); font-size: 0.97rem; }
 .case-shot { margin-top: 18px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
 .case-shot img { aspect-ratio: 16/10; object-fit: cover; object-position: top; }
+.case-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gold-400);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(224,184,106,0.4);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.case-link:hover { color: #fff; border-color: #fff; }
 
 .research-block {
   margin-top: 60px;
@@ -407,7 +422,7 @@ strong { color: var(--navy-900); font-weight: 600; }
   border: 1px solid rgba(255,255,255,0.08);
   padding: 32px;
 }
-.research-media img { border-radius: 10px; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+.research-media img { border-radius: 10px; aspect-ratio: 3/4; object-fit: cover; object-position: center; }
 .research-text h4 { color: #fff; }
 .research-text p { color: rgba(255,255,255,0.75); }
 
@@ -437,6 +452,11 @@ strong { color: var(--navy-900); font-weight: 600; }
   font-family: var(--serif);
   font-weight: 700;
   font-size: 1rem;
+}
+.work-mark--fsu {
+  background: linear-gradient(135deg, #782f40, #4d1a26);
+  color: #ceb888;
+  font-size: 0.85rem;
 }
 
 /* ---------- Community ---------- */
@@ -496,7 +516,6 @@ strong { color: var(--navy-900); font-weight: 600; }
 
   .case-grid { grid-template-columns: 1fr; }
   .research-block { grid-template-columns: 1fr; }
-  .research-media img { aspect-ratio: 16/9; }
   .work-grid { grid-template-columns: repeat(2, 1fr); }
   .community-grid { grid-template-columns: 1fr; }
 }
