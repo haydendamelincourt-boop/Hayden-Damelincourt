@@ -358,10 +358,10 @@ strong { color: var(--navy-900); font-weight: 600; }
 .interest--build .wrap { position: relative; z-index: 1; }
 .rocket-bg {
   position: absolute;
-  left: 50%;
-  bottom: -10%;
-  width: 190px;
-  height: 190px;
+  left: 20%;
+  bottom: -12%;
+  width: 220px;
+  height: 220px;
   opacity: 0;
   pointer-events: none;
   z-index: 0;
@@ -369,8 +369,8 @@ strong { color: var(--navy-900); font-weight: 600; }
 }
 @keyframes rocketLaunch {
   0%   { transform: translate(-50%, 0); opacity: 0; }
-  8%   { opacity: 0.16; }
-  85%  { opacity: 0.16; }
+  8%   { opacity: 0.4; }
+  85%  { opacity: 0.4; }
   100% { transform: translate(-50%, -640px); opacity: 0; }
 }
 
