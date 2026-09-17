@@ -245,23 +245,26 @@ strong { color: var(--navy-900); font-weight: 600; }
 
 /* ---------- About ---------- */
 .scroll-onward {
-  display: flex;
-  justify-content: center;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 6px 0 14px;
-  color: var(--teal-500);
-  text-decoration: none;
+  display: block;
+  width: 26px;
+  height: 42px;
+  margin: 10px auto 24px;
+  border: 2px solid var(--navy-700);
+  border-radius: 20px;
+  opacity: 0.55;
   background: var(--paper);
 }
-.scroll-onward svg {
-  width: 14px;
-  height: 14px;
-  animation: scrollOnwardBounce 1.7s ease-in-out infinite;
-}
-@keyframes scrollOnwardBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(5px); }
+.scroll-onward span {
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  margin-left: -2px;
+  background: var(--navy-700);
+  border-radius: 2px;
+  animation: scrollDown 1.8s infinite;
 }
 
 .about { padding: 110px 0 90px; background: var(--paper); }
