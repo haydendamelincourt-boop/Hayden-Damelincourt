@@ -293,8 +293,49 @@ strong { color: var(--navy-900); font-weight: 600; }
   display: block;
   margin-bottom: 0.4em;
 }
+.interest-text { position: relative; }
 .interest-text h3 { margin-bottom: 0.5em; }
 .interest-text p { font-size: 1.02rem; }
+
+/* ---------- Interest decorative icons ---------- */
+.interest-icon {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
+}
+
+.icon-wave path { animation: waveDrift 3.2s ease-in-out infinite; }
+.icon-wave path:nth-child(2) { animation-delay: -1.1s; }
+.icon-wave path:nth-child(3) { animation-delay: -2.2s; }
+@keyframes waveDrift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
+.icon-ball { animation: ballSpin 7s linear infinite; transform-origin: 50% 50%; }
+@keyframes ballSpin { to { transform: rotate(360deg); } }
+
+.icon-rocket { animation: rocketFloat 2.8s ease-in-out infinite; }
+@keyframes rocketFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+.icon-compass .compass-needle {
+  transform-origin: 32px 32px;
+  animation: needleSway 3.6s ease-in-out infinite;
+}
+@keyframes needleSway {
+  0%, 100% { transform: rotate(-16deg); }
+  50% { transform: rotate(16deg); }
+}
+
+@media (max-width: 900px) {
+  .interest-icon { width: 44px; height: 44px; top: -4px; }
+}
 
 .interest-media img {
   border-radius: var(--radius);
