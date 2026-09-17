@@ -433,6 +433,31 @@ strong { color: var(--navy-900); font-weight: 600; }
   text-align: center;
   padding: 60px 28px 90px;
 }
+.climb-scene {
+  width: 200px;
+  height: auto;
+  margin: 0 auto 18px;
+  display: block;
+}
+.climber {
+  animation: climbStairs 5s ease-in-out infinite;
+}
+@keyframes climbStairs {
+  0%   { transform: translate(28px, 88px); opacity: 0; }
+  6%   { opacity: 1; }
+  78%  { transform: translate(205px, 12px); opacity: 1; }
+  88%  { opacity: 0; transform: translate(205px, 12px); }
+  89%  { transform: translate(28px, 88px); }
+  100% { transform: translate(28px, 88px); opacity: 0; }
+}
+.climb-flag {
+  transform-origin: 212px 20px;
+  animation: flagWave 2.4s ease-in-out infinite;
+}
+@keyframes flagWave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
 .interests-close p {
   font-family: var(--serif);
   font-size: 1.3rem;
