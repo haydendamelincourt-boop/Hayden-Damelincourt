@@ -77,13 +77,19 @@
 
     <!-- OCEAN -->
     <article class="interest interest--ocean">
+      <div class="scene-banner ocean-banner" aria-hidden="true">
+        <svg viewBox="0 0 1200 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="wave-line wave-line--back" d="M-200,70 Q-100,40 0,70 T200,70 T400,70 T600,70 T800,70 T1000,70 T1200,70 T1400,70" stroke="var(--navy-700)" stroke-width="3" fill="none" opacity="0.22"/>
+          <path class="wave-line wave-line--front" d="M-200,66 Q-100,34 0,66 T200,66 T400,66 T600,66 T800,66 T1000,66 T1200,66 T1400,66" stroke="var(--teal-500)" stroke-width="3.5" fill="none"/>
+          <g class="surfer-rig">
+            <ellipse cx="600" cy="60" rx="26" ry="6" fill="var(--gold-500)" transform="rotate(-10 600 60)"/>
+            <circle cx="596" cy="30" r="7" fill="var(--navy-900)"/>
+            <path d="M596,37 L592,54 M592,54 L575,62 M592,54 L604,68 M597,41 L616,32 M597,41 L580,46" stroke="var(--navy-900)" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
       <div class="wrap interest-grid reveal">
         <div class="interest-text">
-          <svg class="interest-icon icon-wave" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M4 22c6-8 12-8 18 0s12 8 18 0 12-8 18 0" stroke="var(--teal-500)" stroke-width="3" stroke-linecap="round"/>
-            <path d="M4 34c6-8 12-8 18 0s12 8 18 0 12-8 18 0" stroke="var(--gold-500)" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
-            <path d="M4 46c6-8 12-8 18 0s12 8 18 0 12-8 18 0" stroke="var(--navy-700)" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
-          </svg>
           <span class="interest-number">01</span>
           <h3>The Ocean</h3>
           <p>I scuba dive, free dive, and spent a summer helping save sea turtles on my local Florida beaches. Diving that often means watching climate change damage reefs and nesting grounds firsthand, with every year the damages becoming more evident.</p>
@@ -101,10 +107,17 @@
     <article class="interest interest--soccer">
       <div class="wrap interest-grid interest-grid--reverse reveal">
         <div class="interest-text">
-          <svg class="interest-icon icon-ball" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="32" cy="32" r="25" stroke="var(--navy-900)" stroke-width="2.5"/>
-            <path d="M32 15 L41.5 21.7 L38 32.7 L26 32.7 L22.5 21.7 Z" fill="var(--navy-900)"/>
-            <path d="M32 15 L32 8 M41.5 21.7 L48.5 17 M38 32.7 L42.5 42.5 M26 32.7 L21.5 42.5 M22.5 21.7 L15.5 17" stroke="var(--navy-900)" stroke-width="2" stroke-linecap="round"/>
+          <svg class="interest-icon icon-scene icon-kick" viewBox="0 0 150 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="6" y1="84" x2="144" y2="84" stroke="var(--navy-700)" stroke-width="1.5" opacity="0.3"/>
+            <g class="net">
+              <path d="M120 30 L120 84 M120 30 L142 30 L142 84" stroke="var(--navy-900)" stroke-width="2.5" fill="none"/>
+              <path d="M120 40 L142 40 M120 50 L142 50 M120 60 L142 60 M120 70 L142 70 M128 30 L128 84 M136 30 L136 84" stroke="var(--navy-700)" stroke-width="1" opacity="0.5"/>
+            </g>
+            <g class="kicker">
+              <circle cx="34" cy="34" r="7" fill="var(--navy-900)"/>
+              <path d="M34,41 L32,60 M32,60 L20,66 M32,60 L40,72 M33,46 L46,40 M33,46 L22,50" stroke="var(--navy-900)" stroke-width="4" stroke-linecap="round" fill="none"/>
+            </g>
+            <circle class="kick-ball" cx="40" cy="72" r="6" fill="var(--gold-500)"/>
           </svg>
           <span class="interest-number">02</span>
           <h3>Soccer</h3>
@@ -121,14 +134,15 @@
 
     <!-- ENTREPRENEURSHIP -->
     <article class="interest interest--build">
+      <svg class="rocket-bg" viewBox="0 0 64 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M32 6c8 6 12 16 12 26 0 6-2 11-4 14H24c-2-3-4-8-4-14 0-10 4-20 12-26Z" stroke="var(--navy-900)" stroke-width="1.6" stroke-linejoin="round"/>
+        <circle cx="32" cy="24" r="4" stroke="var(--teal-500)" stroke-width="1.6"/>
+        <path d="M20 38l-8 10M44 38l8 10" stroke="var(--gold-500)" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M28 46l-2 12M36 46l2 12" stroke="var(--navy-900)" stroke-width="1.6" stroke-linecap="round"/>
+        <path class="rocket-trail" d="M32 60 L32 90" stroke="var(--gold-500)" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      </svg>
       <div class="wrap interest-grid reveal">
         <div class="interest-text">
-          <svg class="interest-icon icon-rocket" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M32 6c8 6 12 16 12 26 0 6-2 11-4 14H24c-2-3-4-8-4-14 0-10 4-20 12-26Z" stroke="var(--navy-900)" stroke-width="2.5" stroke-linejoin="round"/>
-            <circle cx="32" cy="24" r="4" stroke="var(--teal-500)" stroke-width="2.5"/>
-            <path d="M20 38l-8 10M44 38l8 10" stroke="var(--gold-500)" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M28 46l-2 12M36 46l2 12" stroke="var(--navy-900)" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
           <span class="interest-number">03</span>
           <h3>Entrepreneurship</h3>
           <p>In high school, I co-founded <strong>myKickstrt</strong> with two other students. We raised over <strong>$10,000</strong>, drew interest from major Florida universities and companies, and became stewards for a wider program promoting high school entrepreneurship across North America. myKickstrt connected students from underprivileged areas with internships, jobs, and community service opportunities, giving these students real résumé lines that closed the disparity gap in college applications.</p>
@@ -145,16 +159,31 @@
 
     <!-- TRAVEL -->
     <article class="interest interest--travel">
+      <div class="scene-banner airport-banner" aria-hidden="true">
+        <svg viewBox="0 0 1200 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="-50" y1="86" x2="1250" y2="86" stroke="var(--navy-700)" stroke-width="1.5" opacity="0.25"/>
+          <g class="walker walker--1">
+            <circle cx="0" cy="30" r="7" fill="var(--navy-900)"/>
+            <path d="M0,37 L0,60 M0,45 L-9,52 M0,45 L10,40 M-6,60 L-9,80 M6,60 L9,80" stroke="var(--navy-900)" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <rect x="10" y="52" width="14" height="20" rx="2" fill="var(--teal-500)"/>
+            <line x1="17" y1="52" x2="17" y2="45" stroke="var(--navy-900)" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <g class="walker walker--2">
+            <circle cx="0" cy="28" r="6.5" fill="var(--navy-900)"/>
+            <path d="M0,34.5 L0,56 M0,42 L8,49 M0,42 L-9,38 M-5,56 L-8,76 M5,56 L8,76" stroke="var(--navy-900)" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+            <rect x="-22" y="48" width="13" height="18" rx="2" fill="var(--gold-500)"/>
+            <line x1="-15" y1="48" x2="-15" y2="41" stroke="var(--navy-900)" stroke-width="2.6" stroke-linecap="round"/>
+          </g>
+          <g class="walker walker--3">
+            <circle cx="0" cy="32" r="7.5" fill="var(--navy-900)"/>
+            <path d="M0,40 L0,64 M0,48 L-10,54 M0,48 L11,43 M-6,64 L-10,86 M6,64 L10,86" stroke="var(--navy-900)" stroke-width="4.2" stroke-linecap="round" fill="none"/>
+            <rect x="11" y="56" width="15" height="21" rx="2" fill="var(--navy-700)"/>
+            <line x1="18.5" y1="56" x2="18.5" y2="48" stroke="var(--navy-900)" stroke-width="3" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
       <div class="wrap interest-grid interest-grid--reverse reveal">
         <div class="interest-text">
-          <svg class="interest-icon icon-compass" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="32" cy="32" r="25" stroke="var(--navy-900)" stroke-width="2.5"/>
-            <circle cx="32" cy="32" r="19" stroke="var(--navy-700)" stroke-width="1" opacity="0.4"/>
-            <g class="compass-needle">
-              <path d="M32 14 L37 32 L32 50 L27 32 Z" fill="var(--gold-500)"/>
-            </g>
-            <circle cx="32" cy="32" r="3" fill="var(--navy-900)"/>
-          </svg>
           <span class="interest-number">04</span>
           <h3>Travel</h3>
           <p>I've traveled since I was a kid, visiting Canada, the U.S., Costa Rica, France, and many more countries. I love adventure trips, such as hiking, skiing, the cliff worth jumping off. In addition, I've also worked summers in local hotels, seeing hospitality from the operating side, not just as a guest.</p>
